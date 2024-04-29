@@ -6,8 +6,16 @@ function Page() {
     <div className='flex-grow-1'>
       <Header/>
       <div className='container'>  {/* Bootstrap контейнер */}
-        <AboutCompany/>  {/* Страница выбирается нажатием на сайдбаре. Сейчас это только AboutCOmpany. */}
+        <div className='about-company-wrapper'>
+          <AboutCompany/>
+        </div>
       </div>
+      <style jsx>{`
+        .about-company-wrapper {
+          padding-left: 72px;
+          padding-right: 72px;
+        }
+      `}</style>
     </div>
   );
 }
